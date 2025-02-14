@@ -1,21 +1,35 @@
 body {
+    display: flex;
+    flex-direction: column;
     font-family: Arial, sans-serif;
     background-color: #444444;
     text-align: center;
+    min-height: 100vh;
     margin: 0;
     padding: 20px;
 }
 
-.container {
-    background: white;
+.header, .container {
+    background: rgb(204, 204, 204);
     padding: 20px;
-    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
+    max-width: 1600px;
     margin: auto;
-    width: 100%; 
+    width: 100%;
 }
 
+.header {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom: 3px solid #000000;
+}
+
+
+.container {
+    flex: 1;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
 ul {
     list-style: none;
     padding: 0;
@@ -23,7 +37,7 @@ ul {
 
 li {
     padding: 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #000000;
     cursor: pointer;
 }
 
@@ -50,25 +64,34 @@ button:hover {
     background: #0056b3;
 }
 
+.footer {
+    color: white;
+    text-align: center;
+    padding: 30px; 
+    margin-top: auto;
+    margin-bottom: 1rem;
+    font-size: 3em; 
+}
+
 @media (max-width: 768px) {
-    .container {
+    .header, .container {
         padding: 10px;
     }
 
     button {
-        width: 100%; 
+        width: 100%;
         margin: 5px 0;
     }
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
-    .container {
-        max-width: 80%; 
+    .header, .container {
+        max-width: 800px;
     }
 }
 
 @media (min-width: 1201px) {
-    .container {
-        max-width: 500px; 
+    .header, .container {
+        max-width: 1600px;
     }
 }
