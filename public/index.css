@@ -1,0 +1,75 @@
+/* index.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #444444;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+    width: 100%; 
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%; 
+        margin: 5px 0;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .container {
+        max-width: 80%; 
+    }
+}
+
+@media (min-width: 1201px) {
+    .container {
+        max-width: 500px; 
+    }
+}

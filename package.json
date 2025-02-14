@@ -1,0 +1,19 @@
+{
+  "name": "folder-server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "HakiouDerion",
+  "license": "ISC",
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "express": "^4.21.2",
+    "ip": "^2.0.1"
+  },
+  "devDependencies": {},
+  "description": "Simple website to share your files"
+}
