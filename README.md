@@ -1,5 +1,8 @@
 # Website Share Files
 
+# Example
+![Example](example.png)
+
 # How to setup
 1. Install NodeJS [here](https://nodejs.org/en/download)
 2. Use `git clone https://github.com/Daymons15432/website-share-files.git` to clone the files
